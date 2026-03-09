@@ -33,4 +33,9 @@ public class ArrayValidatorImpl implements ArrayValidator {
         }
         return true;
     }
+
+    @Override
+    public String getDelimiterRegex() {
+        return DELIMITER_REGEX;
+    }
 }

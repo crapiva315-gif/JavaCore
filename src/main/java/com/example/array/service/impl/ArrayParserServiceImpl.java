@@ -17,8 +17,6 @@ import java.util.List;
 public class ArrayParserServiceImpl implements ArrayParserService {
 
     private static final Logger logger = LogManager.getLogger(ArrayParserServiceImpl.class);
-
-    private static final String DELIMITER_REGEX = "\\s*[;,]\\s*|(?<=\\d)\\s*-\\s*(?=\\d)|\\s+";
     private final ArrayReader reader = new ArrayReaderImpl();
     private final ArrayValidator validator = new ArrayValidatorImpl();
 
@@ -32,7 +30,7 @@ public class ArrayParserServiceImpl implements ArrayParserService {
                 continue;
             }
             String trimmed = line.trim();
-            String[] numbers = trimmed.split(DELIMITER_REGEX);
+            String[] numbers = trimmed.split(validator.getDelimiterRegex());
             int[] elements = new int[numbers.length];
             for (int i = 0; i < numbers.length; i++) {
                 elements[i] = Integer.parseInt(numbers[i].trim());
