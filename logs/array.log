@@ -1,0 +1,385 @@
+2026-03-09 12:26:28.213 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 12:26:28.216 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:26:28.216 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:26:28.216 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:26:28.216 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:26:28.217 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:26:28.217 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:30:13.027 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 12:30:13.030 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.030 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.031 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.031 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.031 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:30:13.031 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:30:13.031 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15; -3'
+2026-03-09 12:30:13.031 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '-5; 0; 15; -3'
+2026-03-09 12:30:13.031 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[11, 2]}
+2026-03-09 12:30:13.031 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '11; 2': CustomArray{elements=[11, 2]}
+2026-03-09 12:30:13.032 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:30:13.032 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: ''
+2026-03-09 12:30:13.032 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.032 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '3 4 7': CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.033 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:30:13.033 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1y1 21 32'
+2026-03-09 12:30:13.033 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; 200; abc; 300'
+2026-03-09 12:30:13.033 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '100; 200; abc; 300'
+2026-03-09 12:30:13.033 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[42]}
+2026-03-09 12:30:13.033 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '42': CustomArray{elements=[42]}
+2026-03-09 12:30:13.034 [main] INFO  com.example.array.Main - Successfully parsed 5 arrays from file
+2026-03-09 12:30:13.034 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.034 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 12:30:13.034 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 3
+2026-03-09 12:30:13.034 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 6
+2026-03-09 12:30:13.034 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.035 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.035 [main] INFO  com.example.array.Main -   min=1, max=3, sum=6
+2026-03-09 12:30:13.035 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.035 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:30:13.035 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.035 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 10
+2026-03-09 12:30:13.035 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 50
+2026-03-09 12:30:13.036 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 150
+2026-03-09 12:30:13.036 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.036 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.036 [main] INFO  com.example.array.Main -   min=10, max=50, sum=150
+2026-03-09 12:30:13.036 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.036 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:30:13.036 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[11, 2]}
+2026-03-09 12:30:13.036 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 2
+2026-03-09 12:30:13.037 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 11
+2026-03-09 12:30:13.037 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 13
+2026-03-09 12:30:13.037 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[2, 11]}
+2026-03-09 12:30:13.037 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[2, 11]}
+2026-03-09 12:30:13.037 [main] INFO  com.example.array.Main -   min=2, max=11, sum=13
+2026-03-09 12:30:13.037 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[2, 11]}
+2026-03-09 12:30:13.037 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[2, 11]}
+2026-03-09 12:30:13.037 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.037 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 3
+2026-03-09 12:30:13.038 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 7
+2026-03-09 12:30:13.038 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 14
+2026-03-09 12:30:13.038 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.038 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.038 [main] INFO  com.example.array.Main -   min=3, max=7, sum=14
+2026-03-09 12:30:13.038 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.038 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:30:13.038 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[42]}
+2026-03-09 12:30:13.038 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 12:30:13.039 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 42
+2026-03-09 12:30:13.039 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 42
+2026-03-09 12:30:13.039 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[42]}
+2026-03-09 12:30:13.039 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[42]}
+2026-03-09 12:30:13.039 [main] INFO  com.example.array.Main -   min=42, max=42, sum=42
+2026-03-09 12:30:13.039 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[42]}
+2026-03-09 12:30:13.039 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[42]}
+2026-03-09 12:31:13.407 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 12:31:13.410 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.410 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.410 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.410 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.411 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:31:13.411 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:31:13.411 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15; -3'
+2026-03-09 12:31:13.411 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '-5; 0; 15; -3'
+2026-03-09 12:31:13.411 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[11, 2]}
+2026-03-09 12:31:13.411 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '11; 2': CustomArray{elements=[11, 2]}
+2026-03-09 12:31:13.412 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:31:13.412 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: ''
+2026-03-09 12:31:13.412 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.412 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '3 4 7': CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.413 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:31:13.413 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1y1 21 32'
+2026-03-09 12:31:13.413 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; 200; abc; 300'
+2026-03-09 12:31:13.413 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '100; 200; abc; 300'
+2026-03-09 12:31:13.413 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[42]}
+2026-03-09 12:31:13.414 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '42': CustomArray{elements=[42]}
+2026-03-09 12:31:13.414 [main] INFO  com.example.array.Main - Successfully parsed 5 arrays from file
+2026-03-09 12:31:13.414 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.414 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 12:31:13.414 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 3
+2026-03-09 12:31:13.414 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 6
+2026-03-09 12:31:13.415 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.415 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.415 [main] INFO  com.example.array.Main -   min=1, max=3, sum=6
+2026-03-09 12:31:13.415 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.415 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:31:13.415 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.415 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 10
+2026-03-09 12:31:13.415 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 50
+2026-03-09 12:31:13.415 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 150
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.416 [main] INFO  com.example.array.Main -   min=10, max=50, sum=150
+2026-03-09 12:31:13.416 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.416 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 12:31:13.416 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[11, 2]}
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 2
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 11
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 13
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[2, 11]}
+2026-03-09 12:31:13.416 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[2, 11]}
+2026-03-09 12:31:13.416 [main] INFO  com.example.array.Main -   min=2, max=11, sum=13
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[2, 11]}
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[2, 11]}
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 3
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 7
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 14
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main -   min=3, max=7, sum=14
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[3, 4, 7]}
+2026-03-09 12:31:13.417 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[42]}
+2026-03-09 12:31:13.417 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 12:31:13.418 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 42
+2026-03-09 12:31:13.418 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 42
+2026-03-09 12:31:13.418 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[42]}
+2026-03-09 12:31:13.418 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[42]}
+2026-03-09 12:31:13.418 [main] INFO  com.example.array.Main -   min=42, max=42, sum=42
+2026-03-09 12:31:13.418 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[42]}
+2026-03-09 12:31:13.418 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[42]}
+2026-03-09 12:35:41.383 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:35:41.396 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:35:41.419 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 2 lines from file: C:\Users\PC\AppData\Local\Temp\junit13880751548041221396\test.txt
+2026-03-09 12:35:41.425 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 0 lines from file: C:\Users\PC\AppData\Local\Temp\junit5753277164122727403\empty.txt
+2026-03-09 12:35:41.461 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15'
+2026-03-09 12:35:41.472 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:35:41.473 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:35:41.474 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:35:41.476 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:35:41.478 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:35:41.479 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:35:41.482 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:35:41.483 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 0
+2026-03-09 12:35:41.484 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 9
+2026-03-09 12:35:41.486 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: -1
+2026-03-09 12:35:41.486 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[-3, -1, 0, 2, 5]}
+2026-03-09 12:35:41.487 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:35:41.488 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:35:41.488 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:35:41.489 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: -10
+2026-03-09 12:35:41.490 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 15
+2026-03-09 12:35:41.491 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 12:35:41.492 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:35:41.493 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 12:36:28.382 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15'
+2026-03-09 12:36:28.396 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:36:28.398 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:36:28.400 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:36:28.402 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:36:28.404 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:36:28.406 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:37:13.471 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15'
+2026-03-09 12:37:13.484 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:37:13.486 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:37:13.488 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:37:13.490 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:37:13.493 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:37:13.495 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:39:00.399 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 0; 15'
+2026-03-09 12:39:00.414 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:39:00.416 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:39:00.418 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:39:00.419 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:39:00.421 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:39:00.423 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:36.691 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '-5; 1; 15'
+2026-03-09 12:40:36.704 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:40:36.706 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:40:36.708 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:40:36.709 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:40:36.711 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:36.712 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:47.445 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:40:47.449 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:40:47.450 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:40:47.452 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:40:47.455 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:47.456 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:56.294 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '' in line: '5; -1; 15'
+2026-03-09 12:40:56.310 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:40:56.312 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:40:56.314 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:40:56.315 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:40:56.318 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:40:56.319 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:44:10.526 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:44:10.530 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:44:10.531 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:44:10.533 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:44:10.535 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:44:10.540 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:44:39.175 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:44:39.187 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:44:39.209 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 2 lines from file: C:\Users\PC\AppData\Local\Temp\junit4767289863167664988\test.txt
+2026-03-09 12:44:39.215 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 0 lines from file: C:\Users\PC\AppData\Local\Temp\junit11521911042329683500\empty.txt
+2026-03-09 12:44:39.252 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:44:39.254 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:44:39.254 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:44:39.255 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:44:39.257 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:44:39.259 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:44:39.261 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:44:39.262 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 0
+2026-03-09 12:44:39.262 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 9
+2026-03-09 12:44:39.264 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: -1
+2026-03-09 12:44:39.265 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[-3, -1, 0, 2, 5]}
+2026-03-09 12:44:39.266 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:44:39.266 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:44:39.267 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:44:39.268 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: -10
+2026-03-09 12:44:39.269 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 15
+2026-03-09 12:44:39.271 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 12:44:39.272 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:44:39.273 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 12:46:50.126 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:46:50.130 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:46:50.132 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:46:50.133 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:46:50.137 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:46:50.138 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:47:05.020 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:47:05.024 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:47:05.025 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:47:05.026 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:47:05.029 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:47:05.030 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:47:18.379 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:47:18.382 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:47:18.384 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:47:18.385 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:47:18.387 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:47:18.389 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:54:50.539 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 2 lines from file: C:\Users\PC\AppData\Local\Temp\junit12798755106824133666\test.txt
+2026-03-09 12:54:50.555 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 0 lines from file: C:\Users\PC\AppData\Local\Temp\junit15804752231679560155\empty.txt
+2026-03-09 12:54:50.591 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 12:54:50.592 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 12:54:50.594 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 12:54:50.595 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 12:54:50.597 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:54:50.598 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 12:54:50.601 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:54:50.602 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 0
+2026-03-09 12:54:50.603 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 9
+2026-03-09 12:54:50.605 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: -1
+2026-03-09 12:54:50.605 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[-3, -1, 0, 2, 5]}
+2026-03-09 12:54:50.606 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:54:50.606 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 12:54:50.607 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 12:54:50.607 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: -10
+2026-03-09 12:54:50.608 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 15
+2026-03-09 12:54:50.610 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 12:54:50.611 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 12:54:50.612 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 13:37:49.767 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 13:37:49.770 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 13:37:49.770 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 13:37:49.771 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 13:37:49.771 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 13:37:49.771 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 13:37:49.771 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:18:33.446 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 15:18:33.450 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:18:33.451 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:18:33.451 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:18:33.451 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:18:33.452 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:18:33.452 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:20:03.675 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 10 lines from file: data/arrays.txt
+2026-03-09 15:20:03.678 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.679 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '1; 2; 3': CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.679 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.679 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '10; 20; 30; 40; 50': CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.679 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:20:03.679 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:20:03.680 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[-5, 0, 15, -3]}
+2026-03-09 15:20:03.680 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '-5; 0; 15; -3': CustomArray{elements=[-5, 0, 15, -3]}
+2026-03-09 15:20:03.680 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[11, 2]}
+2026-03-09 15:20:03.680 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '11; 2': CustomArray{elements=[11, 2]}
+2026-03-09 15:20:03.681 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 15:20:03.681 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: ''
+2026-03-09 15:20:03.681 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.681 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '3 4 7': CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.682 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 15:20:03.682 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '1y1 21 32'
+2026-03-09 15:20:03.682 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; 200; abc; 300'
+2026-03-09 15:20:03.682 [main] WARN  com.example.array.service.impl.ArrayParserServiceImpl - Skipping invalid or empty line: '100; 200; abc; 300'
+2026-03-09 15:20:03.682 [main] DEBUG com.example.array.factory.CustomArrayFactory - Created CustomArray: CustomArray{elements=[42]}
+2026-03-09 15:20:03.682 [main] INFO  com.example.array.service.impl.ArrayParserServiceImpl - Parsed array from line '42': CustomArray{elements=[42]}
+2026-03-09 15:20:03.682 [main] INFO  com.example.array.Main - Successfully parsed 6 arrays from file
+2026-03-09 15:20:03.683 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.683 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
+2026-03-09 15:20:03.683 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 3
+2026-03-09 15:20:03.683 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 6
+2026-03-09 15:20:03.683 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.683 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.683 [main] INFO  com.example.array.Main -   min=1, max=3, sum=6
+2026-03-09 15:20:03.683 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.683 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:20:03.683 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.684 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 10
+2026-03-09 15:20:03.684 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 50
+2026-03-09 15:20:03.684 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 150
+2026-03-09 15:20:03.684 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.684 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.684 [main] INFO  com.example.array.Main -   min=10, max=50, sum=150
+2026-03-09 15:20:03.684 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.684 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[10, 20, 30, 40, 50]}
+2026-03-09 15:20:03.684 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[-5, 0, 15, -3]}
+2026-03-09 15:20:03.685 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: -5
+2026-03-09 15:20:03.685 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 15
+2026-03-09 15:20:03.685 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 7
+2026-03-09 15:20:03.685 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[-5, -3, 0, 15]}
+2026-03-09 15:20:03.685 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[-5, -3, 0, 15]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   min=-5, max=15, sum=7
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[-5, -3, 0, 15]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[-5, -3, 0, 15]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[11, 2]}
+2026-03-09 15:20:03.686 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 2
+2026-03-09 15:20:03.686 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 11
+2026-03-09 15:20:03.686 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 13
+2026-03-09 15:20:03.686 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[2, 11]}
+2026-03-09 15:20:03.686 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[2, 11]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   min=2, max=11, sum=13
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[2, 11]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[2, 11]}
+2026-03-09 15:20:03.686 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 3
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 7
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 14
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.687 [main] INFO  com.example.array.Main -   min=3, max=7, sum=14
+2026-03-09 15:20:03.687 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.687 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[3, 4, 7]}
+2026-03-09 15:20:03.687 [main] INFO  com.example.array.Main - Array: CustomArray{elements=[42]}
+2026-03-09 15:20:03.687 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 15:20:03.688 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 42
+2026-03-09 15:20:03.688 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 42
+2026-03-09 15:20:03.688 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[42]}
+2026-03-09 15:20:03.688 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[42]}
+2026-03-09 15:20:03.688 [main] INFO  com.example.array.Main -   min=42, max=42, sum=42
+2026-03-09 15:20:03.688 [main] INFO  com.example.array.Main -   bubble sort:    CustomArray{elements=[42]}
+2026-03-09 15:20:03.688 [main] INFO  com.example.array.Main -   selection sort: CustomArray{elements=[42]}
+2026-03-09 15:21:03.738 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 2 lines from file: C:\Users\PC\AppData\Local\Temp\junit9892746930438482616\test.txt
+2026-03-09 15:21:03.755 [main] DEBUG com.example.array.reader.impl.ArrayReaderImpl - Read 0 lines from file: C:\Users\PC\AppData\Local\Temp\junit6463902380454610006\empty.txt
+2026-03-09 15:21:03.799 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '1y1' in line: '1y1 21 32'
+2026-03-09 15:21:03.801 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'x3' in line: '1; 2; x3; 6..5; 77'
+2026-03-09 15:21:03.802 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token 'abc' in line: '100; abc; 300'
+2026-03-09 15:21:03.803 [main] WARN  com.example.array.validator.impl.ArrayValidatorImpl - Invalid token '!@#' in line: '!@#'
+2026-03-09 15:21:03.806 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 15:21:03.808 [main] DEBUG com.example.array.validator.impl.ArrayValidatorImpl - Empty line — skipped
+2026-03-09 15:21:03.812 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 15:21:03.814 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 0
+2026-03-09 15:21:03.815 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: 9
+2026-03-09 15:21:03.817 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMax result: -1
+2026-03-09 15:21:03.818 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[-3, -1, 0, 2, 5]}
+2026-03-09 15:21:03.819 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortSelection result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 15:21:03.819 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3, 4, 5]}
+2026-03-09 15:21:03.820 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 2, 3]}
+2026-03-09 15:21:03.821 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: -10
+2026-03-09 15:21:03.822 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findSum result: 15
+2026-03-09 15:21:03.844 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 42
+2026-03-09 15:21:03.850 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - sortBubble result: CustomArray{elements=[1, 3, 5]}
+2026-03-09 15:21:03.851 [main] DEBUG com.example.array.service.impl.ArrayServiceImpl - findMin result: 1
