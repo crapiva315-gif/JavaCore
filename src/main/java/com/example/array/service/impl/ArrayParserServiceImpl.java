@@ -19,7 +19,6 @@ public class ArrayParserServiceImpl implements ArrayParserService {
     private static final Logger logger = LogManager.getLogger(ArrayParserServiceImpl.class);
 
     private static final String DELIMITER_REGEX = "\\s*[;,]\\s*|(?<=\\d)\\s*-\\s*(?=\\d)|\\s+";
-
     private final ArrayReader reader = new ArrayReaderImpl();
     private final ArrayValidator validator = new ArrayValidatorImpl();
 

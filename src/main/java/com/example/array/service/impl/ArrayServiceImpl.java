@@ -6,6 +6,8 @@ import com.example.array.service.ArrayService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.Arrays;
+
 public class ArrayServiceImpl implements ArrayService {
 
     private static final Logger logger = LogManager.getLogger(ArrayServiceImpl.class);
@@ -48,10 +50,7 @@ public class ArrayServiceImpl implements ArrayService {
             throw new CustomArrayException("Array is null or empty");
         }
         int[] elements = array.getElements();
-        long sum = 0;
-        for (int element : elements) {
-            sum += element;
-        }
+        long sum = Arrays.stream(elements).asLongStream().sum();
         logger.debug("findSum result: {}", sum);
         return sum;
     }
