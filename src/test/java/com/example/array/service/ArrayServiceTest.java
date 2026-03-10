@@ -16,66 +16,66 @@ class ArrayServiceTest {
     private final ArrayService service = new ArrayServiceImpl();
 
     @Test
-    void testFindMinReturnsMinimum() throws CustomArrayException {
+    void testGetMinReturnsMinimum() throws CustomArrayException {
         // given
         // when
-        int result = service.findMin(ARRAY);
+        int result = service.getMin(ARRAY);
         // then
         assertEquals(1, result);
     }
 
     @Test
-    void testFindMinSingleElement() throws CustomArrayException {
+    void testGetMinSingleElement() throws CustomArrayException {
         // given
         // when
-        int result = service.findMin(SINGLE);
+        int result = service.getMin(SINGLE);
         // then
         assertEquals(42, result);
     }
 
     @Test
-    void testFindMinNegatives() throws CustomArrayException {
+    void testGetMinNegatives() throws CustomArrayException {
         // given
         // when
-        int result = service.findMin(NEGATIVES);
+        int result = service.getMin(NEGATIVES);
         // then
         assertEquals(-10, result);
     }
 
     @Test
-    void testFindMinThrowsOnEmpty() {
+    void testGetMinThrowsOnEmpty() {
         // given
         CustomArray empty = new CustomArray(new int[]{});
         // when
         // then
-        assertThrows(CustomArrayException.class, () -> service.findMin(empty));
+        assertThrows(CustomArrayException.class, () -> service.getMin(empty));
     }
 
     @Test
-    void testFindMaxReturnsMaximum() throws CustomArrayException {
+    void testGetMaxReturnsMaximum() throws CustomArrayException {
         // given
         // when
-        int result = service.findMax(ARRAY);
+        int result = service.getMax(ARRAY);
         // then
         assertEquals(9, result);
     }
 
     @Test
-    void testFindMaxNegatives() throws CustomArrayException {
+    void testGetMaxNegatives() throws CustomArrayException {
         // given
         // when
-        int result = service.findMax(NEGATIVES);
+        int result = service.getMax(NEGATIVES);
         // then
         assertEquals(-1, result);
     }
 
     @Test
-    void testFindMaxThrowsOnEmpty() {
+    void testGetMaxThrowsOnEmpty() {
         // given
         CustomArray empty = new CustomArray(new int[]{});
         // when
         // then
-        assertThrows(CustomArrayException.class, () -> service.findMax(empty));
+        assertThrows(CustomArrayException.class, () -> service.getMax(empty));
     }
 
     @Test

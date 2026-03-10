@@ -5,9 +5,9 @@ import com.example.array.exception.CustomArrayException;
 
 public interface ArrayService {
 
-    int findMin(CustomArray array) throws CustomArrayException;
+    int getMin(CustomArray array) throws CustomArrayException;
 
-    int findMax(CustomArray array) throws CustomArrayException;
+    int getMax(CustomArray array) throws CustomArrayException;
 
     long findSum(CustomArray array) throws CustomArrayException;
 

@@ -2,6 +2,7 @@ package com.example.array;
 
 import com.example.array.entity.CustomArray;
 import com.example.array.exception.CustomArrayException;
+import com.example.array.factory.CustomArrayFactory;
 import com.example.array.service.ArrayParserService;
 import com.example.array.service.ArrayService;
 import com.example.array.service.impl.ArrayParserServiceImpl;
@@ -18,15 +19,14 @@ public class Main {
     public static void main(String[] args) {
         ArrayParserService parserService = new ArrayParserServiceImpl();
         ArrayService arrayService = new ArrayServiceImpl();
-
         try {
             List<CustomArray> arrays = parserService.parseFromFile("data/arrays.txt");
             logger.info("Successfully parsed {} arrays from file", arrays.size());
 
             for (CustomArray array : arrays) {
                 logger.info("Array: {}", array);
-                int min = arrayService.findMin(array);
-                int max = arrayService.findMax(array);
+                int min = arrayService.getMin(array);
+                int max = arrayService.getMax(array);
                 long sum = arrayService.findSum(array);
                 CustomArray bubbleSorted = arrayService.sortBubble(array);
                 CustomArray selectionSorted = arrayService.sortSelection(array);

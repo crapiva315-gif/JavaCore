@@ -13,7 +13,7 @@ public class ArrayServiceImpl implements ArrayService {
     private static final Logger logger = LogManager.getLogger(ArrayServiceImpl.class);
 
     @Override
-    public int findMin(CustomArray array) throws CustomArrayException {
+    public int getMin(CustomArray array) throws CustomArrayException {
         if (array == null || array.length() == 0) {
             throw new CustomArrayException("Array is null or empty");
         }
@@ -24,12 +24,12 @@ public class ArrayServiceImpl implements ArrayService {
                 min = elements[i];
             }
         }
-        logger.debug("findMin result: {}", min);
+        logger.debug("getMin result: {}", min);
         return min;
     }
 
     @Override
-    public int findMax(CustomArray array) throws CustomArrayException {
+    public int getMax(CustomArray array) throws CustomArrayException {
         if (array == null || array.length() == 0) {
             throw new CustomArrayException("Array is null or empty");
         }
@@ -40,7 +40,7 @@ public class ArrayServiceImpl implements ArrayService {
                 max = elements[i];
             }
         }
-        logger.debug("findMax result: {}", max);
+        logger.debug("getMax result: {}", max);
         return max;
     }
 
