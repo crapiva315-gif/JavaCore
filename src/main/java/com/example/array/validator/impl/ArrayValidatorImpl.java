@@ -21,7 +21,7 @@ public class ArrayValidatorImpl implements ArrayValidator {
             logger.debug("Empty line — skipped");
             return false;
         }
-        String[] tokens = line.trim().split(DELIMITER_REGEX);
+        String[] tokens = line.strip().split(DELIMITER_REGEX);
         for (String token : tokens) {
             if (token.trim().isEmpty()) {
                 continue;
