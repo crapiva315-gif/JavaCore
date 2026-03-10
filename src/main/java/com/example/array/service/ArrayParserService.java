@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ArrayParserService {
 
-    List<CustomArray> parseFromFile(String filePath) throws CustomArrayException;
+  List<CustomArray> parseFromFile(String filePath) throws CustomArrayException;
 }
