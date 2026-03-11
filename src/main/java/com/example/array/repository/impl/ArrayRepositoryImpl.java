@@ -43,6 +43,7 @@ public class ArrayRepositoryImpl implements ArrayRepository {
       CustomArray array = found.get();
       array.removeSubscriber(warehouse);
       arrays.remove(array);
+      warehouse.remove(id);
       logger.info("Removed array id={} from repository", id);
     } else {
       logger.warn("Array id={} not found for removal", id);
