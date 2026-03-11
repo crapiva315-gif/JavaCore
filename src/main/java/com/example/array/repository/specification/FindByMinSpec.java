@@ -23,11 +23,11 @@ public class FindByMinSpec implements ArraySpecification {
     if (statistics.isEmpty()) {
       return false;
     }
-    long ArrayMin = statistics.get().getMin();
+    long arrayMin = statistics.get().getMin();
     return switch (operator) {
-      case GREATER_THAN -> ArrayMin > min;
-      case LESS_THAN    -> ArrayMin < min;
-      case EQUAL_TO     -> ArrayMin == min;
+      case GREATER_THAN -> arrayMin > min;
+      case LESS_THAN    -> arrayMin < min;
+      case EQUAL_TO     -> arrayMin == min;
     };
   }
 }

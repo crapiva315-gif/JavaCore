@@ -115,7 +115,7 @@ class ArrayServiceTest {
         // when
         CustomArray result = service.sortBubble(array);
         // then
-        assertEquals(expected, result);
+        assertArrayEquals(expected.getElements(), result.getElements());
     }
 
     @Test
@@ -126,7 +126,7 @@ class ArrayServiceTest {
         // when
         CustomArray result = service.sortBubble(array);
         // then
-        assertEquals(expected, result);
+        assertArrayEquals(expected.getElements(), result.getElements());
     }
 
     @Test
@@ -137,7 +137,7 @@ class ArrayServiceTest {
         // when
         service.sortBubble(original);
         // then
-        assertEquals(snapshot, original);
+        assertArrayEquals(original.getElements(), snapshot.getElements());
     }
 
     @Test
@@ -148,7 +148,7 @@ class ArrayServiceTest {
         // when
         CustomArray result = service.sortSelection(array);
         // then
-        assertEquals(expected, result);
+        assertArrayEquals(expected.getElements(), result.getElements());
     }
 
     @Test
@@ -159,17 +159,19 @@ class ArrayServiceTest {
         // when
         CustomArray result = service.sortSelection(array);
         // then
-        assertEquals(expected, result);
+        assertArrayEquals(expected.getElements(), result.getElements());
     }
 
     @Test
     void testSortSelectionDoesNotMutateOriginal() throws CustomArrayException {
         // given
-        CustomArray original = new CustomArray(new int[]{5, 3, 1});
-        CustomArray snapshot = new CustomArray(new int[]{5, 3, 1});
+        CustomArray original = new CustomArray(new int[]{5, 2, 1});
+        CustomArray snapshot = new CustomArray(new int[]{5, 2, 1});
+        System.out.println(original);
+        System.out.println(snapshot);
         // when
         service.sortSelection(original);
         // then
-        assertEquals(snapshot, original);
+        assertArrayEquals(snapshot.getElements(), original.getElements());
     }
 }

@@ -33,7 +33,7 @@ public class ArrayParserServiceImpl implements ArrayParserService {
       String[] numbers = stripped.split(validator.getDelimiterRegex());
       int[] elements = new int[numbers.length];
       for (int i = 0; i < numbers.length; i++) {
-        elements[i] = Integer.parseInt(numbers[i].trim());
+        elements[i] = Integer.parseInt(numbers[i].strip());
       }
       CustomArray array = CustomArrayFactory.createArray(elements);
       arrays.add(array);

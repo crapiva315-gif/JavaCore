@@ -13,14 +13,11 @@ public class FindByLengthSpec implements ArraySpecification {
 
   @Override
   public boolean matches(CustomArray customArray) {
-    if (length == 0) {
-      return false;
-    }
-    int ArrayLength = customArray.length();
+    int arrayLength = customArray.length();
     return switch (operator) {
-      case GREATER_THAN -> ArrayLength > length;
-      case LESS_THAN -> ArrayLength < length;
-      case EQUAL_TO -> ArrayLength == length;
+      case GREATER_THAN -> arrayLength > length;
+      case LESS_THAN -> arrayLength < length;
+      case EQUAL_TO -> arrayLength == length;
     };
   }
 }

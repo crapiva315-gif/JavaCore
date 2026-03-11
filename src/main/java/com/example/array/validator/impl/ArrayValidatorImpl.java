@@ -23,10 +23,10 @@ public class ArrayValidatorImpl implements ArrayValidator {
     }
     String[] tokens = line.strip().split(DELIMITER_REGEX);
     for (String token : tokens) {
-      if (token.trim().isEmpty()) {
+      if (token.isBlank()) {
         continue;
       }
-      if (!token.trim().matches(NUMBER_REGEX)) {
+      if (!token.strip().matches(NUMBER_REGEX)) {
         logger.warn("Invalid token '{}' in line: '{}'", token, line);
         return false;
       }

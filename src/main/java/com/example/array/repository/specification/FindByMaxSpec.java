@@ -23,11 +23,11 @@ public class FindByMaxSpec implements ArraySpecification {
     if (statistics.isEmpty()) {
       return false;
     }
-    long ArrayMax = statistics.get().getMax();
+    long arrayMax = statistics.get().getMax();
     return switch (operator) {
-      case GREATER_THAN -> ArrayMax > max;
-      case LESS_THAN    -> ArrayMax < max;
-      case EQUAL_TO     -> ArrayMax == max;
+      case GREATER_THAN -> arrayMax > max;
+      case LESS_THAN    -> arrayMax < max;
+      case EQUAL_TO     -> arrayMax == max;
     };
   }
 }
